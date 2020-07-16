@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+<!--angle : 화면을 돌리는 기능-->
+    <gradient
+        android:angle="90"
+        android:centerColor="#ffffff"
+        android:endColor="#0327FA"
+        android:startColor="#D11515"/>
+
+
+
+
+</shape>

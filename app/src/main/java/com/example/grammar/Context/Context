@@ -1,0 +1,10 @@
+
+Context
+ - 역할 : ActivityManagerService의 내용을 참조할 수 있도록 함
+
+
+Context의 종류
+ - activity의 context -> Activity의 주변 정보(app의 activity의 주변 정보)
+ - application의 context - Application의 주변 정보 (app전체의 주변 정보)
+
+Application > Activity

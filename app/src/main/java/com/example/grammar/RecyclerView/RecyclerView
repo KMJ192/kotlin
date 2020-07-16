@@ -1,0 +1,25 @@
+RecyclerView
+ - ListView의 개선판
+    - ViewHolder 포함
+ - 유연함
+    - LayoutManager
+        - Linear
+        - Grid
+        - StaggerGrid
+
+
+
+build.gradle(Module:app)에 [implementation "androidx.recyclerview:recyclerview:1.1.0"]추가
+
+xml에서 <androidx.recyclerview.widget.RecyclerView/>를 이용하여 RecyclerView 편집
+
+어댑터 사용
+뷰홀더를 강제로 사용하여 Resource사용을 줄임
+수평, 수직적 리스트 모두 구현 가능
+
+
+RecyclerBookWithRecyclerViewActivity
+ 1. Adapter생성(- RecyclerView.Adapter 상속(제너릭 타입 -> 클래스명.ViewHolder))
+  - 생성자 List, inflater
+  - ViewHolder생성(RecyclerView.ViewHolder상속(제너릭 타입 -> itemView))
+  - onCreateViewHolder, getItemCount, onBindViewHolder 오버라이드

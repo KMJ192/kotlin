@@ -1,0 +1,51 @@
+Network Communication
+
+
+DataBase -> Server -> Client
+
+Server <----> Client
+ - URL로 데이터 요청
+ - 인증정보 전송
+ - JSON을 이용하여 Communication
+ - JavaScript Object Notation(Javascript에서 객체를 만들 때 사용함)
+ - Json형식
+ - [] -> List
+ - {} -> Object
+ EX)
+    [
+        {
+            "column1":1,
+            "column2":"2"
+            "Key":"Value1"
+        },
+        {
+            "column1":1,
+            "column2":"2"
+            "Key":"Value2"
+        }
+    ]
+
+Json Parsing
+ - Json을 Kotlin 또는 Java로 컴파일 할 수 있도록 변형
+ - Serializable(직렬화)
+ - Class Test(
+            var column1 : Int? = null
+            var column2 : String? = null
+            var Key : String? = null
+        )
+
+ Test(1,"2", "Value1");
+
+Request Type
+ - GET : 정보 요청         -> 200 OK
+ - POST : 정보 추가 요청    -> 201 Created
+ - DELETE : 정보 삭제 요청
+ - PUT : 정보 수정 요청
+
+Status Code
+ - 200번대는 성공 코드
+
+
+Library
+ - Volly
+ - Retrofit

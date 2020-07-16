@@ -1,0 +1,23 @@
+Async - 비동기 방식
+Sync - 동기 방식
+
+
+동기 방식
+ - 작업을 순서대로 진행
+ - DESC 실행 (내림차순 실행)
+
+동기 방식
+ - Thread를 만들어서 작업을 따로 처리
+
+
+Async
+ - Async Task 상속받음
+    -> onPreExecute : Thread가 출발 하기 전
+    -> doIntBackground : Thread가 실행할 작업
+    -> onPregressUpdate : Thread실행 중간 로그
+    -> onPostExecute : 작업을 마친 후 Main Thread
+ - Main Thread를 기다릴 필요가 없음
+ - Network 작업
+ - 재사용 불가능
+ - Activity를 종료 하더라도 Async는 종료되지 않음(화면이 내려갈 경우 pause기능 추가 필요)
+ - AsyncTask는 하나만 실행될 수 있음(병렬처리를 할 수 없음).

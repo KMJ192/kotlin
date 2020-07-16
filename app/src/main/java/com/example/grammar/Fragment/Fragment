@@ -1,0 +1,33 @@
+
+Fragment
+
+ - Activity : 앱에 보이는 한 화면의 단위
+
+ - EX) Activity가 길어질 경우 운영의 어려움이 있음
+
+ - 안드로이드의 Device가 매우 다양함, mobile, tablet 포함
+
+ - Activity의 Part를 나누어 관리
+
+ - Activity 종속적
+
+ - XML에 ViewComponent로 추가한다
+
+ - Code(동적)으로 추가함
+
+ - 데이터 전달 방법
+    Activity -> Fragment : argument와 bundle
+    Fragment -> Activity : 자체구현(리스너 구현)
+
+ - Life Cycle 존재
+    onAttach()
+    onCreate()
+    onCreateView()
+    onActivityCreated()
+    onStart()
+    onResume()
+    onPause()
+    onStop()
+    onDestroyView()
+    onDestroy()
+    onDetach()

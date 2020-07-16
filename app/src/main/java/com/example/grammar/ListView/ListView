@@ -1,0 +1,27 @@
+
+1. 리스트로 만들고 싶은 아이템의 리스트를 준비
+2. 인플레이터를 준비
+3. 인플레이터로 아이템 하나에 해당하는 뷰를 만듬
+4. 위에서 만든 View를 Container View에 붙여줌
+
+ListView
+1. 리스트로 만들고 싶은 아이템 List를 준비
+2. Adapter를 이용
+
+AddView와 ListView의 차이점
+1. 만드는 방식
+2. 그리는 방식
+    - AddView -> 리스트의 갯수와 상관없이 한번에 다 그림
+    - ListView -> 보여지는 부분 + @만 한번에 그림, 필요한 경우 추가
+
+어댑터 생성
+ - BaseAdapter() 상속
+ - 생성자 생성
+ - getView, getItem, getItemId, getCount 메소드 override
+ - getItem = 화면에 구성되는 List중 하나를 return (position기반)
+ - getItemId = List의 id를 부여 하여 return
+    - EX)List의 position값 등을 id로 부여
+ - getCount = 화면에 구성될 List의 갯수 return
+ - getView
+
+onCreate에 생성한 어댑터를 이용하여 데이터 입출력(List등)

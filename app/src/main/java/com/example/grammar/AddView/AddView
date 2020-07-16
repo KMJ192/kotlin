@@ -1,0 +1,16 @@
+
+
+ListView
+ - 유사하게 반복되는 View를 그리기 위한 도구
+ - ListView를 그리는 방법
+    1. addView
+        -> View를 그리는 가장 기초적인 방법
+        -> Item을 담을 xml을 생성
+        -> Container View에 더해줌
+        -> 반복
+
+    2. ListView
+
+    3. RecycleView
+
+

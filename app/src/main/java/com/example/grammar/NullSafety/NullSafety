@@ -1,0 +1,24 @@
+
+Null Safety
+ - Null에 대해서 안전함
+ - Kotlin의 특징
+ - NullPointException 발생 방지
+ - ?
+ - !!
+
+//button이 null아니라면
+if(button != null){
+    button.setOnClickListener
+}
+
+//button이 null아니라면
+button?.setOnClickListener
+
+//button이 null이 아님을 보장함, null일 경우 Error
+button!!.setOnClickListener
+
+Null이 될 수 없는 type
+Int, Double, Float, Class
+
+Null이 될 수 있는 type
+Int?, Double?, Float?, Class?

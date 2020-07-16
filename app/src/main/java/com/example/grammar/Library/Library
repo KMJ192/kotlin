@@ -1,0 +1,9 @@
+
+Library
+ - User가 개발을 하기위해 필요한 도구들이 미리 구현 되어
+ - Function or Class로 구현되어 있음
+ - FrameWork에 없는 기능
+ - 외부의 도움
+ - 특징
+    FrameWork에서 제공하지 않는 기능을 사용할 수 있도록 기능을 제공함
+    편의성을 위함
